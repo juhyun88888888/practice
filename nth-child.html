@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child속성 연습</title>
+</head>
+<style>
+body{
+    background-color: black;
+}
+nav>div{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255,255,255,.5);
+    display: inline-block;
+}
+nav{
+    text-align: center;
+}
+nav:nth-child(3){
+    margin-top: 50px;
+}
+nav:nth-child(3)>div{
+    border-radius: 50%;
+}
+nav>div:nth-child(1){
+background-color:rgba(255,255,255,1);
+}
+nav>div:hover{
+    background-color: rgba(255,255,255,1);
+}
+.text{
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top:50px;
+}
+</style>
+<body>
+    <nav>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</nav>
+<section class="text">
+    nth-child속성을 이용한 예제
+</section>
+<nav>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </nav>
+ 
+</body>
+</html>

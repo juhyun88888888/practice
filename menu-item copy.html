@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴아이템 실습중</title>
+</head>
+<style>
+/* 노멀라이즈 */
+*{
+    padding:0;
+    margin: 0;}
+
+li{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+
+html>body{
+    text-align: center;
+}
+
+/* 커스텀 */
+
+.menu-1{
+    background-color: blanchedalmond;
+    padding:20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menu-1>ul{
+    background-color: rgb(255, 187, 147);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0px 30px;
+    padding-top: 17px;
+}
+.menu-1>ul>li{
+    display: inline-block;
+    border: 2px solid rgb(255, 127, 53);
+    font-size: 0.5rem;
+    width: 120px;
+    height: 40px;
+}
+
+.menu-1>ul>li>a{
+    display: block;
+    background-color: rgb(255, 199, 173);
+    font-size: 0;
+    width: 120px;
+    height: 40px;
+}
+
+.menu-1>ul>li:hover>a{
+    background-color: rgb(43, 110, 255);
+    color:white;
+}
+
+.menu-1>ul>li>span{
+    padding-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    position: relative; top: -27px; 
+}
+
+.menu-1>ul>li>span:hover{
+   color: white;
+}
+
+p{
+   position: relative; top: -5px;
+   font-size: 12px;
+   background-color: rgb(204, 83, 52);
+   color: white;
+}
+</style>
+<body>
+    <nav class="menu-1">
+        <ul>
+            <p><b>menu item</b> 실습</p>
+            <li><a href="#"></a><span>1차 아이템</span></li>
+            <li><a href="#"></a><span>2차 아이템</span></li>
+            <li><a href="#"></a><span>3차 아이템</span></li>
+            <li><a href="#"></a><span>4차 아이템</span></li>
+        </ul>
+    </nav>
+</body>
+</html>

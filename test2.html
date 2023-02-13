@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1월28일 inline 속성 테스트</title>
+</head>
+<style>
+div.relative{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 5px solid blueviolet;
+}
+
+div.absolute{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+    border: 6px solid red;
+    color: red;
+}
+
+p{
+    position:fixed;
+    top: 220px;
+    left: 110px;
+    bottom: 300px;
+    margin: 10px;
+}
+</style>
+
+<body>
+<h2>position:absolute;</h2>
+<section>가장 가까운 조상을 기준으로 한다.</section>
+<div class="relative">relative;
+    <div class="absolute">absolute;</div>
+    <p>일반 문단 텍스트</p>
+</div>
+</body>
+</html>
+
