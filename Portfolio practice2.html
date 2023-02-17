@@ -1,146 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- css 분리해서 파일형식으로 로딩 "/" 루트를 의미함.-->
+    <link rel="stylesheet" href="/css/portfolio.css"> 
+
 </head>
-<style>
-    .juhyun{
-  margin-top: 5px;
-  padding: 20px;
-  font-family: Helvetica;
-    }
-    span{
-        font-size: 0.7rem;
-        margin-left: 300px;
-    }
-    p{
-        font-size: 0.3rem;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        color: #232323;
-        font-family: Arial, Helvetica, sans-serif
-    }
-    #menuToggle{
-        display: block;
-        position: relative;
-        top: 50px;
-        left: 50px;
 
-        z-index: 1;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-    #menuToggle a{
-        text-decoration: none;
-        color: #232323;
-        transition: color 0.3s ease;
-    }
-    #menuToggle input{
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-
-        cursor: pointer;
-        opacity: 0;
-        z-index: 2;
-
-        -webkit-touch-callout: none;
-    }
-    #menuToggle span{
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-
-        background: #cdcdcd;
-        border-radius: 3px;
-
-        z-index: 1;
-        transform-origin: 4px 0px;
-
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-
-}
-#menuToggle span: :first-child{
-    transform-origin: 0% 0%;
-}
-#menuToggle span:nth-child(2){
-    transform-origin: 0% 100%;
-}
-#menuToggle input:checked ~ span{
-    opacity: 1;
-    transform: rotate(45deg)
-    translate(-2px, -1px);
-    background: #232323;
-}
-#menuToggle input:checked ~ span:nth-child(3){
-    opacity: 0;
-    transform: rotate(0deg)
-    scale(0.2, 0.2);
-}
-#menu{
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding-top: 125px;
-
-    background: #ededed;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2,0.05,1.0);
-}
-#menu li{
-    padding: 10px 0;
-    font-size: 22px;
-}
-#menuToggle input:checked ~ ul{
-    transform: none;
-}
-
-</style>
 <body>
+    <!-- 
+        파일명은 대문자로 시작하지 않음. 파일명에 띄어쓰기는 보통 하이픈(-) 또는 언더바(_) 로 대채 
+        Portfolio practice2 -> portfolio_practice2.html
+    -->
     <div class="juhyun">
-    <b>juhyun.</b> <span>+82 10-8269-1501 / sjh150100@gmail.com</span>
-</div>
+        <b>juhyun.</b> <span>+82 10-8269-1501 / sjh150100@gmail.com</span>
+    </div>
 
-<nav role="navigation">
-<div id="menuToggle">
-    <input type="checkbox">
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>Experience</li></a>
-        <a href="#"><li>Skills</li></a>
-        <a href="#"><li>Portfolio</li></a>
-        <a href="#"><li>Testimonials</li></a>
-        <a href="#"><li>Blog</li></a>
-        <a href="#"><li>Contact</li></a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>2023 Juhyun LAB
-        ALL RUGHTS RESERVED.
-        </p>
-    
-    </ul>
-</div>
-</nav>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Experience</li>
+                </a>
+                <a href="#">
+                    <li>Skills</li>
+                </a>
+                <a href="#">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#">
+                    <li>Testimonials</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>2023 Juhyun LAB
+                    ALL RUGHTS RESERVED.
+                </p>
+
+            </ul>
+        </div>
+    </nav>
 </body>
+
 </html>
